@@ -1,0 +1,59 @@
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+Host_Alias DBS = ubn00, cnts00
+Host_Alias WEBSITES = ubn01, cnts01, ubn000
+Host_Alias NETWORKING = !192.168.122.10, !192.168.122.11, !192.168.122.12, 192.168.122.0/255.255.255.0
+# Notar que las siguientes dos lineas son equivalentes!
+Host_Alias PCS1 = WEBSITES, !DBS
+Host_Alias PCS2 = ubn01, cnts01
+
+# User alias specification
+
+User_Alias USERS = pedro, pablo, sysadmin, user1, user2
+User_Alias ADMINS = sysadmin, user1
+User_Alias WEBMASTERS = sysadmin, user2, pablo
+User_Alias LIMITED_USERS = USERS, !WEBMASTERS, !ADMINS
+
+# Cmnd alias specification
+
+Cmnd_Alias SHUTDOWN_CMDS = /sbin/shutdown, /sbin/reboot, /sbin/halt
+Cmnd_Alias ADMIN_CMDS = /usr/bin/passwd, /usr/sbin/useradd, /usr/sbin/userdel, /usr/sbin/usermod, /usr/sbin/visudo
+Cmnd_Alias WEB_CMDS = /etc/init.d/apache2
+Cmnd_Alias DBS_CMDS = /etc/init.d/mysql
+
+#Variables para Run as alias
+
+Runas_Alias WEB_USERS = www-data
+Runas_Alias DBS_USERS = mysql
+Runas_Alias GIT_USERS = %gitgroup, #1003, user2
+
+
+# User privilege specification#################### REVISAR!!!! 
+# <user list> <host list> = <operator list> <tag list> <command list>
+root	ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+ADMINS WEBSITES = (ALL) ADMIN_CMDS, SHUTDOWN_CMDS
+
+#user1 ALL = (ALL) NOPASSWD: /sbin/fdisk
+user1 ALL = (ALL)  /sbin/fdisk
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
