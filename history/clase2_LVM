@@ -1,0 +1,128 @@
+    1  ping www.google.com
+    2  ifconfig
+    3  sudo ifdown enp0s3
+    4  sudo ifup enps03
+    5  sudo ifup enp0s3
+    6  ifconfig
+    7  ping www.google.com
+    8  sudo apt-get install vim
+    9  sudo apt-get install tree
+   10  sudo apt-get install lvm2
+   11  sudo apt-get install git
+   12  pwd
+   13  mkdir LXS2_lsandoval
+   14  ls
+   15  cd LXS2_lsandoval/
+   16  mkdir tareas
+   17  mkdir src misc
+   18  mkdir src history
+   19  mkdir  history
+   20  ls
+   21  touch misc/file 1 src/file1 tareas/file1
+   22  ls
+   23  tree
+   24  remove 1
+   25  remove /1
+   26  rv 1
+   27  rm 1
+   28  ls
+   29  tree
+   30  vim .gitignore
+   31  ls
+   32  tree
+   33  git init
+   34  git status
+   35  tree
+   36  git add misc/ 
+   37  git add tareas/ 
+   38  git add src/ 
+   39  git add .gitignore 
+   40  git add history/
+   41  git status
+   42  git commit - m "Primer Commit"
+   43  git commit -m "Primer Commit"
+   44  git config --global user.email "lsandova.610@gmail.com"
+   45  git config --global user.name "Luis Sandoval"
+   46  git commit -m "Primer Commit"
+   47  git add origin https://github.com/lsandoval01/LXS2_lsandoval.git
+   48  git remote add origin https://github.com/lsandoval01/LXS2_lsandoval.git
+   49  git push -u origin master
+   50  cd history
+   51  ls
+   52  history >>clase1
+   53  ls
+   54  cat clase1
+   55  cd 
+   56  ls
+   57  cd LXS2_lsandoval/history/
+   58  git add history/
+   59  cd ..
+   60  tree
+   61  git status
+   62  git add history/
+   63  git status
+   64  git push -u origin master
+   65  tree
+   66  git status
+   67  git commit -m "Subir History"
+   68  git push -u origin master
+   69  cd ..
+   70  fdisk -l
+   71  sudo fdisk -l
+   72  pvdisplay
+   73  sudo pvdisplay
+   74  pvcreate
+   75  pvcreate /dev/sdb
+   76  sudo pvcreate /dev/sdb
+   77  sudo pvcreate /dev/sdc
+   78  sudo vgcreate server01 /dev/sdb
+   79  sudo vgcreate server02 /dev/sdc
+   80  vgdisplay
+   81  sudo vgdisplay
+   82  sudo vgscan
+   83  sudo lvcreate -L 2024 disco1 server01
+   84  sudo lvcreate -L 2024 -n disco1 server01
+   85  sudo lvcreate -L 2024 -n disco2 server02
+   86  ls /dev/server01
+   87  ls /dev/server02
+   88  sudo mkfs.ext4 /dev/server01/disco1
+   89  sudo mkfs.ext4 /dev/server02/disco2
+   90  cd /mnt
+   91  ls
+   92  mkdir Respaldos1 Respaldos2
+   93  sudo cd /mnt
+   94  sudo cd /mnt Disco1 Disco2
+   95  sudo cd /mnt\
+   96  sudo cd /mnt
+   97  ls
+   98  sudo mkdir Respaldos1 Respaldos2
+   99  ls
+  100  mount /dev/server01/disco1 Respaldos1
+  101  sudo mount /dev/server01/disco1 Respaldos1
+  102  sudo mount /dev/server02/disco2 Respaldos2
+  103  ls
+  104  cd Respaldos1
+  105  ls
+  106  CD ..
+  107  cd..
+  108  cd ..
+  109  df -h
+  110  ls
+  111  cd /home/
+  112  LS
+  113  ls
+  114  cd sysadmin/
+  115  ls
+  116  cd LXS2_lsandoval/
+  117  ls
+  118  history >> Clase2_LVM
+  119  ls
+  120  rm Clase2_LVM 
+  121  LS
+  122  ls
+  123  tree
+  124  history >> /history/clase2_LVM
+  125  history > /history/clase2_LVM
+  126  cd history
+  127  ls
+  128  history > clase2_LVM
