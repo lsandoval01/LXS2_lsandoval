@@ -1,0 +1,101 @@
+    1  LS
+    2  ls
+    3  df -h
+    4  pvdisplay
+    5  sudopvdisplay
+    6  sudo pvdisplay
+    7  lvdisplay
+    8  sudo lvdisplay
+    9  ping www.google.com
+   10  ifconfig
+   11  ip add -4
+   12  ip add -
+   13  ip add 
+   14  sudo apt-get install ssh
+   15  history
+   16  vgdisplay
+   17  sudo vgdisplay
+   18  pvdisplay
+   19  sudo pvdisplay
+   20  sudo vgextend servidor01 /dev/sdd
+   21  vgdisplay
+   22  sudo vgdisplay
+   23  sudo vgextend server01 /dev/sdd
+   24  sudo vgdisplay server01
+   25  sudo vgextend server02 /dev/sde
+   26  sudo vgdisplay server02
+   27  lvextend -l 5G /dev/server01/disco1
+   28  lvextend -L 5G /dev/server01/disco1
+   29  sudo lvextend -L 3G /dev/server01/disco1
+   30  sudo lvextend -L 5G /dev/server02/disco2
+   31  lvdisplay
+   32  sudo lvdisplay
+   33  resize2fs /dev/server01/disco1 
+   34  sudo resize2fs /dev/server01/disco1 
+   35  df -h
+   36  sudo umount /dev/server01/disco1 
+   37  sudo umount /dev/server02/disco2 
+   38  sudo resize2fs /dev/server01/disco1 
+   39  e2fsck -f
+   40  e2fsck -f /dev/server01/disco1 
+   41  sudo e2fsck -f /dev/server01/disco1 
+   42  sudo e2fsck -f /dev/server02/disco2 
+   43  sudo umount /dev/server01/disco1 
+   44  sudo e2fsck -f /dev/server02/disco2 
+   45  sudo umount /dev/server02/disco2 
+   46  sudo resize2fs /dev/server01/disco1 
+   47  sudo resize2fs /dev/server02/disco2 
+   48  sudo mount /dev/server02/disco2 
+   49  mnt 
+   50  cd /mnt
+   51  sudo mount /dev/server01/disco1 
+   52  sudo mount /dev/server01/disco1/Respaldos1
+   53  sudo mount /dev/server01/disco1 Respaldos1
+   54  sudo mount /dev/server02/disco2 Respaldos2
+   55  df -h
+   56  lvdisplay
+   57  sudo lvdisplay
+   58  sudo resize2fs /dev/server02/disco2 
+   59  sudo resize2fs /dev/server01/disco1 
+   60  df -h
+   61  vgdisplay
+   62  sudo vgdisplay
+   63  sudo vgdisplay server02
+   64  sudo lvdisplay
+   65  sudo lvdisplay disco1
+   66  sudo lvdisplay server01/disco1
+   67  cd ..
+   68  df -h
+   69  sudo lvextend -L 3072M /dev/server01/disco1  
+   70  sudo lvdisplay server01/disco1
+   71  df -h
+   72  sudo lvdisplay server01/disco1
+   73  sudo lvextend -L 3072M /dev/server01/disco1  
+   74  df -h /home
+   75  sudo resize2fs /dev/server01/disco1 
+   76  sudo resize2fs /dev/server02/disco2 
+   77  df -l
+   78  df -h
+   79  vgdisplay
+   80  sudo vgdisplay
+   81  cd 
+   82  ls
+   83  cd LXS2_lsandoval/
+   84  ls
+   85  cd tareas
+   86  ls
+   87  mkdir proyecto_LVM
+   88  ls
+   89  cd pro
+   90  cd proyecto_LVM/
+   91  ls
+   92  mkdir history
+   93  history > tarea1
+   94  ls
+   95  rm tarea1 
+   96  ls
+   97  history
+   98  pwd
+   99  cd history/
+  100  ls
+  101  history > tarea1
