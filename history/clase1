@@ -1,0 +1,52 @@
+    1  ping www.google.com
+    2  ifconfig
+    3  sudo ifdown enp0s3
+    4  sudo ifup enps03
+    5  sudo ifup enp0s3
+    6  ifconfig
+    7  ping www.google.com
+    8  sudo apt-get install vim
+    9  sudo apt-get install tree
+   10  sudo apt-get install lvm2
+   11  sudo apt-get install git
+   12  pwd
+   13  mkdir LXS2_lsandoval
+   14  ls
+   15  cd LXS2_lsandoval/
+   16  mkdir tareas
+   17  mkdir src misc
+   18  mkdir src history
+   19  mkdir  history
+   20  ls
+   21  touch misc/file 1 src/file1 tareas/file1
+   22  ls
+   23  tree
+   24  remove 1
+   25  remove /1
+   26  rv 1
+   27  rm 1
+   28  ls
+   29  tree
+   30  vim .gitignore
+   31  ls
+   32  tree
+   33  git init
+   34  git status
+   35  tree
+   36  git add misc/ 
+   37  git add tareas/ 
+   38  git add src/ 
+   39  git add .gitignore 
+   40  git add history/
+   41  git status
+   42  git commit - m "Primer Commit"
+   43  git commit -m "Primer Commit"
+   44  git config --global user.email "lsandova.610@gmail.com"
+   45  git config --global user.name "Luis Sandoval"
+   46  git commit -m "Primer Commit"
+   47  git add origin https://github.com/lsandoval01/LXS2_lsandoval.git
+   48  git remote add origin https://github.com/lsandoval01/LXS2_lsandoval.git
+   49  git push -u origin master
+   50  cd history
+   51  ls
+   52  history >>clase1
